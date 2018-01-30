@@ -1,0 +1,16 @@
+p {
+
+width: 50%;
+border: 2px solid blue;
+padding: 10px;
+}
+
+#first-row{
+  border: 3px black solid
+}
+
+td {
+  height: 50px
+  width: 50px;
+}
+
