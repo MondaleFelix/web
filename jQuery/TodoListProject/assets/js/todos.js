@@ -18,6 +18,10 @@ $("span").on("click", function(event){
 $("input[type='text']").keypress(function(event) {
   // Checks to see if key pressed is equal to enter
   if(event.which === 13){
-    console.log("you hit enter bro")
+    // Grabs new todo text from input
+    var todoText = $(this).val();
+    $(this).val("");
+    // Create a new li and add to ul
+    $("ul").append("<li><span>X</span> " + todoText + "</li>");
   }
 });
