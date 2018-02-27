@@ -4,9 +4,9 @@ $("li").on("click", function(){
 })
 
 // Click on X to delete todo
-S("span").on("click", function(event){
+$("span").on("click", function(event){
 
-
+  $(this).parent().remove();
   // Stops all parent events from firing off
   event.stopPropagation();
 
