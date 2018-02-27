@@ -13,3 +13,11 @@ $("span").on("click", function(event){
   event.stopPropagation();
 
 })
+
+
+$("input[type='text']").keypress(function(event) {
+  // Checks to see if key pressed is equal to enter
+  if(event.which === 13){
+    console.log("you hit enter bro")
+  }
+});
