@@ -1,0 +1,1 @@
+alert("Mondale is cool");
