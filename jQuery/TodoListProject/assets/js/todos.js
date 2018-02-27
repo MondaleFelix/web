@@ -1,11 +1,12 @@
 // Check off specific todos by clicking
-$("li").on("click", function(){
+  // Listens for when li is clicked within ul
+$("ul").on("click", "li", function(){
   $(this).toggleClass("completed");
 })
 
 // Click on X to delete todo
-$("span").on("click", function(event){
-
+  // only listens for when span is clicked within a ul
+$("ul").on("click", "span" ,  function(event){
   $(this).parent().fadeOut(500, function(){
     $(this).remove();
   });
