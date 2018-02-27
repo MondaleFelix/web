@@ -6,7 +6,9 @@ $("li").on("click", function(){
 // Click on X to delete todo
 $("span").on("click", function(event){
 
-  $(this).parent().remove();
+  $(this).parent().fadeOut(500, function(){
+    $(this).remove();
+  });
   // Stops all parent events from firing off
   event.stopPropagation();
 
