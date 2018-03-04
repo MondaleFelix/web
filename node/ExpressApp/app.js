@@ -13,6 +13,11 @@ app.get("/dog", function(req, res){
   res.send("MEOWW");
 });
 
+app.get('/r/:something', function(req,res){
+  var name = req.params.something;
+  res.send("Welcome to " + name);
+})
+
 
 // REDIRECTS USER THIS WHEN THE TRY TO ACCES A ROUTE NOT DEFINED
 app.get("*", function(req, res){
