@@ -1,6 +1,10 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
 
+
+// Syntax to use body-parser in our app
+app.use(bodyParser.urlencoded({extended: true}));
 
 // Tells express that we are serving ejs files
 app.set("view engine", "ejs");
@@ -19,6 +23,22 @@ app.get("/campgrounds", function(req,res){
   res.render("campgrounds", {campgrounds: campgrounds});
 });
 
+// Same URL as the get route to follow REST convention
+
+app.post("/campgrounds", function(req,res){
+
+  // Grabs data sent in the "new.ejs" form
+  var name = req.body.name;
+  var image = req.body.image;
+
+  // get data from form and add to campgrounds array
+
+  // redirect back to campgrounds page
+});
+
+app.get("/campgrounds/new", function(req,res){
+  res.render("new.ejs");
+})
 
 app.listen(3000, function(){
   console.log("Listening on port 3000");
