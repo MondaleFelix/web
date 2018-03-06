@@ -19,12 +19,10 @@ app.get("/", function(req,res){
 });
 
 app.get("/campgrounds", function(req,res){
-
   res.render("campgrounds", {campgrounds: campgrounds});
 });
 
 // Same URL as the get route to follow REST convention
-
 app.post("/campgrounds", function(req,res){
 
   // Grabs data sent in the "new.ejs" form
