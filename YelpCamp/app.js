@@ -3,9 +3,9 @@ var app = express();
 var bodyParser = require("body-parser");
 
 var campgrounds = [
-  { name : "Salmon Creek", image: "http://www.nationalparks.nsw.gov.au/~/media/DF58734103EF43669F1005AF8B668209.ashx"},
-  { name : "Granite Hill", image: "https://acadiamagic.com/1170px/blackwoods-1197.jpg"},
-  { name : "Mountain Goat's Rest", image: "http://avaloncampground.com/wp-content/uploads/2013/07/Avalon-Campground-table-woods.png"}
+  { name : "Salmon Creek", image: "https://www.mbanews.com.au/wp-content/uploads/2016/11/google-campus.jpg"},
+  { name : "Granite Hill", image: "https://www.mbanews.com.au/wp-content/uploads/2016/11/google-campus.jpg"},
+  { name : "Mountain Goat's Rest", image: "https://www.mbanews.com.au/wp-content/uploads/2016/11/google-campus.jpg"}
 ]
 
 // Syntax to use body-parser in our app
